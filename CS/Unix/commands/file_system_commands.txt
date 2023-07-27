@@ -1,0 +1,28 @@
+1. Create a directory by the name UnixLab
+2. Create three files - file1.txt, file2.txt, file3.txt inside UnixLab directory
+3. Create a new directory named Code inside UnixLab and copy the three files to it
+4. Remove file1.txt, file2.txt, file3.txt inside UnixLab directory
+5. List the contents of Code directory
+6. Create directory in a given path (Assume some sub directories specified in the path does not exist).
+7. Count the number of directories in a given directory
+8. Print only the directories in a given directory
+9. Show attributes of all files in a directory
+
+$ mkdir UnixLab
+$ cd UnixLab/
+$ touch file1.txt file2.txt file3.txt
+$ mkdir Code
+$ cp file1.txt file2.txt file3.txt Code/
+$ rm file1.txt file2.txt file3.txt
+$ cd Code
+$ ls
+file1.txt
+file2.txt
+file3.txt
+$ mkdir /home/nasc/unix/trial -p
+$ find /home/nasc/unix/ -mindepth 1 -type d | wc -l
+1
+$ $ find /home/nasc/unix/ -type d
+/home/nasc/unix/
+/home/nasc/unix/trial
+$ ls -l

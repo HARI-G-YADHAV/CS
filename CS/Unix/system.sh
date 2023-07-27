@@ -1,0 +1,6 @@
+echo "home : $HOME"
+echo "shell : $SHELL"
+echo "OS : $(uname -a)"
+echo "kernal : $(uname -r)"
+echo "current dir : $PWD"
+echo "path : $PATH"

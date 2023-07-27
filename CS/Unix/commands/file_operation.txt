@@ -1,0 +1,25 @@
+1. Store first fifteen lines of the file /usr/share/dict/words to the file dictionary.txt in the user’s home direc-
+tory
+2. Print the line number of the string India in the file /usr/share/dict/words
+3. Given a file with a number of lines, show the lines with “the” in it.
+4. Given a set of words, order them in lexicographic order using filter.
+5. Compare two files containing words
+
+$ head -n 15 /usr/share/dict/words >  ̃/dictionary.txt
+$ grep -n "ˆIndia$" /usr/share/dict/words
+8882:India
+$ grep "\<the\>" aboutnasc.txt
+$ sort
+zebra
+apple
+cat
+apple
+cat
+zebra
+$ diff names.txt names2.txt
+2,4c2
+< cat
+< dance
+< dog
+---
+> camera
